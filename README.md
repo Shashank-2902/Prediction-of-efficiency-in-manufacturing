@@ -27,13 +27,7 @@ Key performance metrics, **Overall Equipment Effectiveness (OEE)** and **Mean Mo
 ---
 ## **Installation & Dependencies**
 
-To run the notebooks, install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-(Ensure you have **Python 3.8+** installed)
+**Python 3.8+**
 
 ---
 ## **Usage**
