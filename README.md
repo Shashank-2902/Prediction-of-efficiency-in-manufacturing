@@ -28,6 +28,11 @@ Key performance metrics, **Overall Equipment Effectiveness (OEE)** and **Mean Mo
 ## **Installation & Dependencies**
 
 **Python 3.8+**
+**NumPy**
+**Pandas**
+**scikit-learn**
+**TensorFlow**
+**ARIMA**
 
 ---
 ## **Usage**
