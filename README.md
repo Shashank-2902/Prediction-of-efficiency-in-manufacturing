@@ -59,9 +59,3 @@ Key performance metrics, **Overall Equipment Effectiveness (OEE)** and **Mean Mo
 🚀 **Experiment with additional deep learning models** (e.g., LSTM, Transformer-based models).  
 🔍 **Optimize hyperparameters** to enhance forecasting accuracy.  
 📊 **Extend dataset with real-world production data** to validate findings.
-
----
-## **Author**
-
-👤 **Shashank Sakhala**  
-📧 shashankssakhala@gmail.com
