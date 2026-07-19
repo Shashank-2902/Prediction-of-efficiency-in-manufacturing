@@ -1,61 +1,44 @@
 # Prediction of Efficiency in Manufacturing
 
-## **Deep Learning-based Production Forecasting in Manufacturing: A Packaging Equipment Case Study**
+## Overview
 
-### **Overview**
-This repository contains the implementation of a deep learning-based production forecasting model for manufacturing. The case study focuses on packaging equipment, leveraging synthetic data to evaluate forecasting performance.
+This repository contains a deep learning based production forecasting model for manufacturing, built around a packaging equipment case study using synthetic data.
 
-Two models were used for comparison:
+Two models are compared:
 
-- **Temporal Convolutional Network (TCN)** – The primary deep learning model.
-- **AutoRegressive Integrated Moving Average (ARIMA)** – Used as a baseline model.
+- **Temporal Convolutional Network (TCN)** — the primary model
+- **ARIMA (AutoRegressive Integrated Moving Average)** — used as the baseline
 
-Key performance metrics, **Overall Equipment Effectiveness (OEE)** and **Mean Model Error (MME)**, were computed using Python to assess the model's forecasting accuracy.
+Forecasting accuracy is evaluated using two metrics: **OEE** (Overall Equipment Effectiveness) and **MME**.
 
----
-## **Contents**
+## Contents
 
-📄 **Reference Paper**  
-- `Reference_paper.pdf` - The research paper used as the basis for this study.
+- `Reference_paper.pdf` — the paper this project is based on
+- `Synthetic_data_final.ipynb` — generates the synthetic dataset used for training and evaluation
+- `TCN_ARIMA_comparison.ipynb` — trains and compares the TCN and ARIMA models
 
-📊 **Synthetic Data Generation**  
-- `Sythetic_data_final.ipynb` - Jupyter Notebook for generating synthetic data.
+## Dependencies
 
-📈 **Model Comparison**  
-- `TCN_ARIMA_comparision.ipynb` - Notebook implementing and comparing TCN and ARIMA models.
+- Python 3.8+
+- NumPy
+- Pandas
+- scikit-learn
+- TensorFlow
+- statsmodels (for ARIMA)
+- pmdarima
 
----
-## **Installation & Dependencies**
+## Usage
 
-**Python 3.8+**
-**NumPy**
-**Pandas**
-**scikit-learn**
-**TensorFlow**
-**ARIMA**
+1. Run the synthetic data notebook to generate the dataset.
+2. Run the model comparison notebook to train and evaluate both models.
+3. Compare the OEE and MME results printed at the end of the notebook.
 
----
-## **Usage**
+## Results
 
-1️⃣ **Run Synthetic Data Generation Notebook**  
-- Generates the required dataset for model training and evaluation.
+The TCN model reduced MAPE substantially compared to the ARIMA baseline on both metrics. Exact figures are printed in the notebook output. The dataset is synthetic, built to simulate realistic production conditions, not collected from a live production line.
 
-2️⃣ **Execute Model Comparison Notebook**  
-- Trains and evaluates **TCN** and **ARIMA** models on the generated dataset.
+## Possible next steps
 
-3️⃣ **Analyze Results**  
-- Review **OEE** and **MME** calculations to compare forecasting performance.
-
----
-## **Results & Findings**
-
-✔️ **TCN outperformed ARIMA** in predictive accuracy across key evaluation metrics.  
-✔️ **OEE and MME calculations** confirmed the superior performance of the deep learning model.  
-✔️ The **synthetic dataset** effectively simulated real-world production scenarios.
-
----
-## **Future Improvements**
-
-🚀 **Experiment with additional deep learning models** (e.g., LSTM, Transformer-based models).  
-🔍 **Optimize hyperparameters** to enhance forecasting accuracy.  
-📊 **Extend dataset with real-world production data** to validate findings.
+- Try additional architectures (LSTM, transformer based models)
+- Tune hyperparameters further
+- Validate against real production data if it becomes available
